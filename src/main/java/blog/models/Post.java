@@ -16,7 +16,7 @@ public class Post {
         this.author = author;
         this.date = date;
     }
-    public Post(Long id, String title, String body, User author, Date date) {
+    public Post(Long id, String title, String body, User author) {
         this.id = id;
         this.title = title;
         this.body = body;

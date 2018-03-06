@@ -10,6 +10,15 @@ public class User {
     private String fullName;
     private Set<Post> posts = new HashSet<>();
 
+    public User(){
+
+    }
+    public User(Long id, String username,  String fullName) {
+        this.id = id;
+        this.username = username;
+        this.fullName = fullName;
+    }
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
@@ -38,17 +47,6 @@ public class User {
         return posts;
     }
     public void setPosts(Set<Post> posts) {
-        this.posts = posts;
-    }
-
-    public User(){
-
-    }
-    public User(Long id, String username, String passwordHash, String fullName, Set<Post> posts) {
-        this.id = id;
-        this.username = username;
-        this.passwordHash = passwordHash;
-        this.fullName = fullName;
         this.posts = posts;
     }
 
